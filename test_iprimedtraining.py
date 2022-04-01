@@ -16,7 +16,7 @@ def setUp():
     yield
     time.sleep(1)
     driver.close()
-def test_searchProducts(setUp):
+def test_Moviedetails(setUp):
     driver.get("https://iprimedtraining.herokuapp.com/movie.php")
     time.sleep(1)
     driver.find_element_by_name("mname").send_keys(movie)
